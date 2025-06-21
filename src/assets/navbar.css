@@ -1,0 +1,92 @@
+.navbar {
+  line-height: 1.5;
+  font-weight: 400;
+  --navbar-height: 100px;
+  --mobile-menu-width: 280px;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgba(0, 0, 0, 0.95);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--navbar-height);
+  min-height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 1.5rem;
+  margin-left: -30px;
+  position: relative;
+  left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-logo img {
+  height: var(--navbar-height);
+  width: auto;
+  max-height: var(--navbar-height);
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.authim-buttons {
+  display: flex;
+  font-weight: bolder;
+  gap: 1rem;
+  align-items: left;
+  margin-left: 4rem;
+}
+
+.btnim {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #c4ff00;
+  color: #c4ff00;
+}
+
+.btnim:hover {
+  background-color: #c4ff00;
+  color: #000; /* black text for contrast */
+}
+
+.signup-btnim {
+  background-color: #c4ff00;
+  color: #000;
+}
+
+.signup-btnim:hover {
+  background-color: transparent;
+  color: #c4ff00;
+}
